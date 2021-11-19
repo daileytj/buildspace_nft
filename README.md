@@ -1,15 +1,5 @@
-# Basic Sample Hardhat Project
+# Buildspace - Mint your own NFT Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project is built following the Buildspace Projects NFT Collection guide provided by [Buildspace](https://buildspace.so/).
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+Programmatically generate your own NFT collection, write + deploy a smart contract in Solidity, and build your own React dApp to let friends connect their wallets and interact w/ your NFTs by joining a cohort today.
