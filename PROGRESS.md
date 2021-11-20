@@ -54,4 +54,4 @@
 
 ###### I deployed 3 contracts with bad metadata formatting before testing locally... Lesson learned! Will test locally first from now on ;-)
 
-## ![](progress-report/section-2/progress-report-section_2-lesson_3-4.png)
+## ![My Test Wallet At The End Of Section 2](progress-report/section-2/progress-report-section_2-lesson_3-4.png)
