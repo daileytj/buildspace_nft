@@ -28,6 +28,12 @@
   color: white;
 }
 
+.wallet-address-text {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 24px;
+}
+
 .gradient-text {
   background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
   background-clip: text;
@@ -36,6 +42,7 @@
 }
 
 .cta-button {
+  align-self: center;
   height: 45px;
   border: 0;
   width: auto;
@@ -59,6 +66,15 @@
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   margin-right: 15px;
+}
+
+.three-words-gif {
+  width: 350px;
+  height: 350px;
+  align-self: center;
+  margin-bottom: 24px;
+  padding: 8px;
+  border: 1px solid white;
 }
 
 .opensea-button {

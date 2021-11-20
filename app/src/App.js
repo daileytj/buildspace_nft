@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import twitterLogo from './assets/twitter-logo.svg';
+import threeWordsGif from './assets/three-words.gif';
 
 const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
@@ -59,19 +60,23 @@ const App = () => {
     }
   }
 
-  // Render Methods
-  const renderNotConnectedContainer = () => (
-    <button onClick={connectWallet} className="cta-button connect-wallet-button">
-      Connect to Wallet
-    </button>
-  );
+  const getButton = () => {
+    if (currentAccount === "") {
+      return (<button onClick={connectWallet} className="cta-button connect-wallet-button">
+        Connect to Wallet
+      </button>)
+    } return (<button onClick={null} className="cta-button connect-wallet-button">
+      Mint NFT
+    </button>)
+
+  };
 
   useEffect(() => {
     checkIfWalletIsConnected();
   }, [])
 
   /*
-  * Added a conditional render! We don't want to show Connect to Wallet if we're already conencted :).
+  * Added a conditional render! We don't want to show Connect to Wallet if we're already connected :).
   */
   return (
     <div className="App">
@@ -81,13 +86,11 @@ const App = () => {
           <p className="sub-text">
             Each unique. Each beautiful. Discover your NFT today.
           </p>
-          {currentAccount === "" ? (
-            renderNotConnectedContainer()
-          ) : (
-            <button onClick={null} className="cta-button connect-wallet-button">
-              Mint NFT
-            </button>
-          )}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <img src={threeWordsGif} alt={'3 Words Gif'} className="three-words-gif" />
+          {getButton()}
+          {currentAccount !== "" && (<p className="wallet-address-text">{currentAccount} is connected!</p>)}
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
