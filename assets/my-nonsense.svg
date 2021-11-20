@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="600" height="600" preserveAspectRatio="none" viewBox="0 0 600 600">
+  <style>.base { fill: #efefef; font-family: serif; font-size: 32px; }</style>
+    <g mask="url(&quot;#SvgjsMask2755&quot;)" fill="none">
+        <rect width="600" height="600" x="0" y="0" fill="#0e2a47"></rect>
+        <g transform="translate(0, 0)" stroke-linecap="round" stroke="url(#SvgjsLinearGradient2756)">
+            <path d="M130 158.41 L130 441.59" stroke-width="15"></path>
+            <path d="M150 132.56 L150 467.44" stroke-width="15"></path>
+            <path d="M170 216.14 L170 383.86" stroke-width="15"></path>
+            <path d="M190 173.68 L190 426.32" stroke-width="15"></path>
+            <path d="M210 217.03 L210 382.98" stroke-width="15"></path>
+            <path d="M230 251.25 L230 348.75" stroke-width="15"></path>
+            <path d="M250 201.38 L250 398.62" stroke-width="15"></path>
+            <path d="M270 190.22 L270 409.78" stroke-width="15"></path>
+            <path d="M290 206.44 L290 393.56" stroke-width="15"></path>
+            <path d="M310 191.51 L310 408.49" stroke-width="15"></path>
+            <path d="M330 244.66 L330 355.35" stroke-width="15"></path>
+            <path d="M350 256.89 L350 343.11" stroke-width="15"></path>
+            <path d="M370 263.28 L370 336.72" stroke-width="15"></path>
+            <path d="M390 131.13 L390 468.87" stroke-width="15"></path>
+            <path d="M410 192.89 L410 407.11" stroke-width="15"></path>
+            <path d="M430 255.78 L430 344.22" stroke-width="15"></path>
+            <path d="M450 144.25 L450 455.75" stroke-width="15"></path>
+            <path d="M470 261.78 L470 338.22" stroke-width="15"></path>
+        </g>
+    </g>
+  
+    <defs>
+        <mask id="SvgjsMask2755">
+            <rect width="600" height="600" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="120" y1="300" x2="480" y2="300" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient2756">
+            <stop stop-color="rgba(58, 167, 195, 0.53)" offset="0"></stop>
+            <stop stop-color="rgba(221, 17, 219, 0.5)" offset="1"></stop>
+        </linearGradient>
+      
+    </defs>
+    <text x="50%" y="50%" class="base" dominant-baseline="middle" text-anchor="middle" color="white">EpicLordHamburger</text>
+</svg>
