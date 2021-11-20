@@ -71,3 +71,5 @@
 ![Front-End Logged In](progress-report/section-3/progress-report-section_3-lesson_2-2.png)
 
 ![Front-End Logged In w/ Address](progress-report/section-3/progress-report-section_3-lesson_2-3.png)
+
+![Cleaned Up Mint Page](progress-report/section-3/logging-in-section3-cleanup.gif)
