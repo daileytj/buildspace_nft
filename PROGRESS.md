@@ -63,3 +63,9 @@
 ### Lesson 1
 
 ![Starter Front-End](progress-report/section-3/progress-report-section_3-lesson_1.png)
+
+### Lesson 2
+
+![Console messages](progress-report/section-3/progress-report-section_3-lesson_2-1.png)
+
+![Front-End Logged In](progress-report/section-3/progress-report-section_3-lesson_2-2.png)
