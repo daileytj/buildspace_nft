@@ -2,9 +2,9 @@
 
 [Mint Site](https://buildspace-nft.web.app/)
 
-[NFT Smart Contract - Etherscan](https://rinkeby.etherscan.io/address/0xf5abcfdefc91cb865d6f3a458f6ceeee8871ec1b)
+[NFT Smart Contract - Etherscan](https://rinkeby.etherscan.io/address/0xa8a94a2c520A16Cde79DDa9AbDab67023a3941dF)
 
-[View Collection - Testnet Opensea Collection](https://testnets.opensea.io/collection/squarenft-qpanboo3cj)
+[View Collection - Testnet Opensea Collection](https://testnets.opensea.io/collection/squarenft-9bv6kj1pye)
 
 This project is built following the Buildspace Projects NFT Collection guide provided by [Buildspace](https://buildspace.so/).
 
