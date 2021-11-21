@@ -73,3 +73,15 @@
 ![Front-End Logged In w/ Address](progress-report/section-3/progress-report-section_3-lesson_2-3.png)
 
 ![Cleaned Up Mint Page](progress-report/section-3/logging-in-section3-cleanup.gif)
+
+---
+
+## Section 4
+
+### Lesson 1
+
+![Console Messaged](progress-report/section-4/progress-report-section_4-lesson_1-1.png)
+
+![Alert](progress-report/section-4/progress-report-section_4-lesson_1-2.png)
+
+![Mint Page Post Mint](progress-report/section-4/progress-report-section_4-lesson_1-3.png)

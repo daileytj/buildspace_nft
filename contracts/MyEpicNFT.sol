@@ -14,14 +14,22 @@ contract MyEpicNFT is ERC721URIStorage {
   using Counters for Counters.Counter;
   Counters.Counter private _tokenIds;
 
+  uint256 private _totalSupply = 50;
+
   string baseSvg = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif; font-size: 24px; }</style><rect width='100%' height='100%' fill='black' /><text x='50%' y='50%' class='base' dominant-baseline='middle' text-anchor='middle'>";
 
   string[] firstWords = ["Aggressive", "Brave", "Cheerful", "Delightful", "Dark", "Encouraging", "Frantic", "Grotesque", "Horrible", "Itchy", "Lively", "Mysterious", "Nervous", "Obedient", "Obnoxious", "Pleasant", "Quaint", "Repulsive", "Shy", "Silly", "Splendid", "Tender", "Unusual", "Uptight", "Wandering", "Zany"];
   string[] secondWords = ["Ashwinder", "Bowtruckle", "Cantaur", "Chimaera", "Demiguise", "Dragon", "Erumpent", "Fairy", "Firedrake", "Fwooper", "Ghoul", "Gnome", "Griffin", "Hippogriff", "Imp", "Jackalope", "Manticore", "Niffler", "Phoenix", "Pixie", "Salamander", "Snail", "Spider", "Toad", "Troll", "Unicorn", "Werewolf", "Yeti" ];
   string[] thirdWords = ["Ear", "Fang", "Tooth", "Pants", "Shirt", "Glasses", "Glove", "Toes", "Eye", "Flesh", "Egg", "Tongue", "Knee", "Elbow", "Hair", "Feather", "Scales", "Tail", "Heart", "Soul", "Eyebrow", "Shoe", "Wings", "Club", "Sword", "Dagger", "Chainsaw", "Horn", "Blubber", "Skin", "Fur", "Toast", "Burger", "Steak", "Liver", "Kidney"];
 
+  event NewEpicNFTMinted(address sender, uint256 tokenId);
+
   constructor() ERC721 ("SquareNFT", "SQUARE") {
     console.log("This is my NFT contract. Woah!");
+  }
+
+  function getTotalNFTsMintedCount () public view returns (uint) {
+    return _tokenIds.current();
   }
 
   function pickRandomFirstWord(uint256 tokenId) public view returns (string memory) {
@@ -50,6 +58,8 @@ contract MyEpicNFT is ERC721URIStorage {
 
   function makeAnEpicNFT() public {
     uint256 newItemId = _tokenIds.current();
+
+    require(_totalSupply > newItemId, "SOLD OUT: Theres a mint limit of 50");
 
     string memory first = pickRandomFirstWord(newItemId);
     string memory second = pickRandomSecondWord(newItemId);
@@ -91,6 +101,8 @@ contract MyEpicNFT is ERC721URIStorage {
   
     _tokenIds.increment();
     console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender);
+
+    emit NewEpicNFTMinted(msg.sender, newItemId);
   }
 }
 

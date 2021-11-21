@@ -36,10 +36,15 @@
 
 .success-message {
   color: #fff;
+  margin-bottom: 24px;
 }
 
 .etherscan-link {
   color: #60c657;
+}
+
+.opensea-link {
+  color: #35aee2;
 }
 
 .gradient-text {
@@ -73,7 +78,13 @@
   background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
-  margin-right: 15px;
+}
+
+.mint-button:disabled,
+.mint-button[disabled] {
+  cursor: default;
+  background: #cdcdcd;
+  color: #6d4c72;
 }
 
 .three-words-gif {
@@ -87,12 +98,15 @@
 
 .opensea-button {
   background-color: rgb(32, 129, 226);
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .mint-count {
   color: white;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0;
 }
 
 .footer-container {
