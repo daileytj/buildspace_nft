@@ -16,7 +16,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccessfulMint, setIsSuccessfulMint] = useState(false);
   const [etherscanLink, setEtherscanLink] = useState('');
-  const [openseaLink, setOpenseaLink] = useState('');
+  const [openseaLink, setOpenseaLink] = useState(OPENSEA_COLLECTION_LINK);
   const [mintCount, setMintCount] = useState(0);
 
   const checkIfWalletIsConnected = async () => {
